@@ -1,7 +1,7 @@
 #########################################################################################################################################
                                                     ZADANIE PROGRAMISTYCZNE NR 1
 
-#POLECENIE:
+POLECENIE:
     Proszę stworzyć program pozwalający na zarządzanie sklepem. Program ma być interaktywny, w sensie takim, 
 iż użytkownik musi mieć możliwość korzystania z prostego UI w terminalu poprzez wybieranie odpowiednich opcji.
 Funkcjonalność programu musi obejmować:

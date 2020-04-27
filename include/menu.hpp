@@ -10,6 +10,6 @@ class Menu{
         Menu();
         ~Menu();
         void show();
-}
+};
 
 #endif  //__MENU__H__

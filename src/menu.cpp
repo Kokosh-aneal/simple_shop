@@ -1,4 +1,5 @@
 #include "../include/menu.hpp"
+#include <iostream>
 
 void Menu::show(){
     std::cout << "Witaj w programie zarzadzajacym sklepem!" << std::endl;

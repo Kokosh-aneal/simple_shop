@@ -23,7 +23,7 @@ WSKAZÓWKI:
     plikach na kanale General.
     3.UI programu ma być przejrzyste i interaktywne – NIE WYMAGANE JEST GUI, GUI jest przedmiotem drugiego zadania programistycznego
     4.Proszę o dostarczenie dokumentacji projektu – w zakładce files kanału General znajduje przykładowa dokumentacja od Pana Boreckiego.
-    5.W razie problemów proszę pisać na mail: Bartosz.Dec@pw.edu.pllub proszę pisać do mnie na Microsoft Teams.
+    5.W razie problemów proszę pisać na mail: Bartosz.Dec@pw.edu.pl lub proszę pisać do mnie na Microsoft Teams.
 #########################################################################################################################################
 Termin oddania: 8 maja 2020
 #########################################################################################################################################

@@ -1,16 +1,18 @@
 #ifndef __PRODUKT__H__
 #define __PRODUKT__H__
 
-#include <string.h>
+#include <string>
 
-class Produkt{
+class Product{
     private:
-        float cena;
-        string nazwa;
-        string 
+        std::string brand;
+        float price;
+        std::string material;
     public:
-        Produkt();
-        dodaj();
-        usun();
-        price_change();
+        Product();
+        void dodaj();
+        void usun();
+        void price_change();
 };
+
+#endif 

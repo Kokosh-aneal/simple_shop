@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/obj.dir/src/main.cpp.o CMakeFiles/obj.dir/src/menu.cpp.o  -o program.out 

@@ -7,8 +7,8 @@ class Menu{
     private:
         int opcja;
     public:
-        Menu();
-        ~Menu();
+        //Menu();
+        //~Menu();
         void show();
 };
 

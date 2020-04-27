@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/include/menu.hpp
+iostream
+-
+
+/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/main.cpp
+../include/menu.hpp
+/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/include/menu.hpp
+iostream
+-
+
+/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/menu.cpp
+../include/menu.hpp
+/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/include/menu.hpp
+iostream
+-
+

@@ -1,0 +1,4 @@
+/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles/edit_cache.dir
+/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles/obj.dir
+/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles/rebuild_cache.dir
+/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles/program.out.dir

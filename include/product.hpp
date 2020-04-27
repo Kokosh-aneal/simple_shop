@@ -9,10 +9,7 @@ class Product{
         float price;
         std::string material;
     public:
-        Product();
-        void dodaj();
-        void usun();
-        void price_change();
+        Product(std::string="*product*", const float = 5.99, std::string="*material*");
 };
 
 #endif 

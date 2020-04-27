@@ -1,5 +1,5 @@
-#ifndef __PRODUKT__H__
-#define __PRODUKT__H__
+#ifndef __PRODUCT__H__
+#define __PRODUCT__H__
 
 #include <string>
 

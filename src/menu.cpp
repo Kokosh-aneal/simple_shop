@@ -14,6 +14,7 @@ void Menu::show(){
         std::cout << "2. Usuń produkt z magazynu" << std::endl;
         std::cout << "3. Zmien cene produktu" << std::endl;
         std::cout << "4. Zloz zamowienie na nowe produkty" << std::endl;
+        std::cout << "5. Wyswietl stan magazynu" << std::endl;
         std::cout << "Wybierz opcje:";
         std::cin >> opcja;
         //Instrukcja switch-case obslugujaca menu

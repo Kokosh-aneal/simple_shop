@@ -1,5 +1,9 @@
 #include "../include/menu.hpp"
 #include <iostream>
+#include "../include/shop.hpp"
+
+Menu::Menu(Shop* sklep_con): sklep(sklep_con){
+}
 
 void Menu::show(){
     while(opcja!=0){

@@ -2,12 +2,15 @@
 #define __MENU__H__
 
 #include <iostream>
+#include "../include/shop.hpp"
 
 class Menu{
     private:
         int opcja;
+        Shop* sklep;
+
     public:
-        //Menu();
+        Menu(Shop*);
         //~Menu();
         void show();
 };

@@ -2,6 +2,7 @@
 #include <iostream>
 #include "../include/shop.hpp"
 #include "../include/product.hpp"
+#include "../include/jacket.hpp"
 
 Menu::Menu(Shop* sklep_con): sklep(sklep_con){
 }
@@ -22,6 +23,33 @@ void Menu::show(){
         switch(opcja){
             //Dodawanie do magazynu
             case 1:
+                //Wybor produktu, ktory uzytkownik chce dodac do magazynu
+                std::cout << "1. Kurtka\n";
+                std::cout << "2. Buty\n";
+                std::cout << "3. Koszulka\n";
+                std::cout << "4. Bielizna\n";
+                std::cout << "\nWybierz produkt, ktory chcesz dodac: ";
+                std::cin >> opcja_add;
+                std::cout << "Marka: ";    std::cin >> brand_temp;
+                std::cout << "Cena: ";     std::cin >> price_temp;
+                std::cout << "Material: "; std::cin >> material_temp;  
+                switch(opcja_add){
+                    case 1:
+                        std::cout << "Ilosc kieszeni: ";    std::cin >> pockets_temp;
+                        Jacket kurtka(brand_temp, price_temp, material_temp, pockets_temp);
+                        sklep->adding(&kurtka);
+                        break;
+                    //case 2:
+                    //    break;
+                    //case 3:
+                    //    break;
+                    //case 4:
+                    //    break;
+                    //default:
+                    //    std::cout << "Wybierz produkt z listy.\n";
+                    //    break;
+                }
+                //sklep.add();
                 break;
             //Usuwanie z magazynu
             case 2:
@@ -34,6 +62,7 @@ void Menu::show(){
                 break;
             //Wyswietlanie stanu magazynu
             case 5:
+                sklep->display_store();
                 break;
             case 0:
                 std::cout << std::endl << "Konczenie pracy programu..." << std::endl;

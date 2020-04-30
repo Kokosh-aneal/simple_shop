@@ -8,7 +8,7 @@ class Product{
         std::string brand;
         float price;
         std::string material;
-        int id;
+        //int id;
     public:
         Product(std::string="*product*", float = 5.99, std::string="*material*");
         ~Product();

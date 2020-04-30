@@ -1,6 +1,7 @@
 #include "../include/menu.hpp"
 #include <iostream>
 #include "../include/shop.hpp"
+#include "../include/product.hpp"
 
 Menu::Menu(Shop* sklep_con): sklep(sklep_con){
 }
@@ -19,13 +20,20 @@ void Menu::show(){
         std::cin >> opcja;
         //Instrukcja switch-case obslugujaca menu
         switch(opcja){
+            //Dodawanie do magazynu
             case 1:
                 break;
+            //Usuwanie z magazynu
             case 2:
                 break;
+            //Zmiana ceny produktu
             case 3:
                 break;
+            //Skladanie zamowienia na nowe produkty
             case 4:
+                break;
+            //Wyswietlanie stanu magazynu
+            case 5:
                 break;
             case 0:
                 std::cout << std::endl << "Konczenie pracy programu..." << std::endl;

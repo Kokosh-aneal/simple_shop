@@ -12,9 +12,10 @@ class Shop{
     public:
         Shop();
         ~Shop();
-        void add();
-        void remove();
-        void order();
+        void adding(Product*);
+        void removing();
+        void ordering();
+        void display_store();
 };
 
 #endif //__SHOP__H__

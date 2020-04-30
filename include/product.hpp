@@ -4,14 +4,14 @@
 #include <string>
 
 class Product{
-    private:
+    public:
         std::string brand;
         float price;
         std::string material;
         //int id;
-    public:
         Product(std::string="*product*", float = 5.99, std::string="*material*");
         ~Product();
+        virtual void display() const = 0;
 };
 
 #endif 

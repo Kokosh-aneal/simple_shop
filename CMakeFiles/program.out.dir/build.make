@@ -62,11 +62,23 @@ program_out_OBJECTS =
 
 # External object files for target program.out
 program_out_EXTERNAL_OBJECTS = \
+"/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles/obj.dir/src/jacket.cpp.o" \
 "/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles/obj.dir/src/main.cpp.o" \
-"/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles/obj.dir/src/menu.cpp.o"
+"/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles/obj.dir/src/menu.cpp.o" \
+"/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles/obj.dir/src/product.cpp.o" \
+"/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles/obj.dir/src/shoes.cpp.o" \
+"/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles/obj.dir/src/shop.cpp.o" \
+"/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles/obj.dir/src/tshirt.cpp.o" \
+"/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles/obj.dir/src/underwear.cpp.o"
 
+program.out: CMakeFiles/obj.dir/src/jacket.cpp.o
 program.out: CMakeFiles/obj.dir/src/main.cpp.o
 program.out: CMakeFiles/obj.dir/src/menu.cpp.o
+program.out: CMakeFiles/obj.dir/src/product.cpp.o
+program.out: CMakeFiles/obj.dir/src/shoes.cpp.o
+program.out: CMakeFiles/obj.dir/src/shop.cpp.o
+program.out: CMakeFiles/obj.dir/src/tshirt.cpp.o
+program.out: CMakeFiles/obj.dir/src/underwear.cpp.o
 program.out: CMakeFiles/program.out.dir/build.make
 program.out: CMakeFiles/program.out.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX executable program.out"

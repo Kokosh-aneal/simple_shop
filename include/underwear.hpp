@@ -9,6 +9,7 @@ class Underwear :public Product{
         std::string shape;
     public:
         Underwear(const std::string="*brand*", float=4, const std::string="*material*", std::string="*shape*");
+        void display() const override;
 };
 
 #endif //__UNDERWEAR__H__

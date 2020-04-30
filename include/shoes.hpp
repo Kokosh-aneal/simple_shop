@@ -8,6 +8,7 @@ class Shoes :public Product{
         int size;
     public:
         Shoes(const std::string="*brand*", float=4, const std::string="*material*", const int = 42);
+        void display() const override;
 };
 
 #endif //__SHOES__H__

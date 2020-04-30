@@ -57,9 +57,33 @@ include CMakeFiles/obj.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/obj.dir/flags.make
 
+CMakeFiles/obj.dir/src/jacket.cpp.o: CMakeFiles/obj.dir/flags.make
+CMakeFiles/obj.dir/src/jacket.cpp.o: src/jacket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/obj.dir/src/jacket.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/obj.dir/src/jacket.cpp.o -c /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/jacket.cpp
+
+CMakeFiles/obj.dir/src/jacket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obj.dir/src/jacket.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/jacket.cpp > CMakeFiles/obj.dir/src/jacket.cpp.i
+
+CMakeFiles/obj.dir/src/jacket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obj.dir/src/jacket.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/jacket.cpp -o CMakeFiles/obj.dir/src/jacket.cpp.s
+
+CMakeFiles/obj.dir/src/jacket.cpp.o.requires:
+
+.PHONY : CMakeFiles/obj.dir/src/jacket.cpp.o.requires
+
+CMakeFiles/obj.dir/src/jacket.cpp.o.provides: CMakeFiles/obj.dir/src/jacket.cpp.o.requires
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/jacket.cpp.o.provides.build
+.PHONY : CMakeFiles/obj.dir/src/jacket.cpp.o.provides
+
+CMakeFiles/obj.dir/src/jacket.cpp.o.provides.build: CMakeFiles/obj.dir/src/jacket.cpp.o
+
+
 CMakeFiles/obj.dir/src/main.cpp.o: CMakeFiles/obj.dir/flags.make
 CMakeFiles/obj.dir/src/main.cpp.o: src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/obj.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/obj.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/obj.dir/src/main.cpp.o -c /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/main.cpp
 
 CMakeFiles/obj.dir/src/main.cpp.i: cmake_force
@@ -83,7 +107,7 @@ CMakeFiles/obj.dir/src/main.cpp.o.provides.build: CMakeFiles/obj.dir/src/main.cp
 
 CMakeFiles/obj.dir/src/menu.cpp.o: CMakeFiles/obj.dir/flags.make
 CMakeFiles/obj.dir/src/menu.cpp.o: src/menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/obj.dir/src/menu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/obj.dir/src/menu.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/obj.dir/src/menu.cpp.o -c /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/menu.cpp
 
 CMakeFiles/obj.dir/src/menu.cpp.i: cmake_force
@@ -105,8 +129,134 @@ CMakeFiles/obj.dir/src/menu.cpp.o.provides: CMakeFiles/obj.dir/src/menu.cpp.o.re
 CMakeFiles/obj.dir/src/menu.cpp.o.provides.build: CMakeFiles/obj.dir/src/menu.cpp.o
 
 
+CMakeFiles/obj.dir/src/product.cpp.o: CMakeFiles/obj.dir/flags.make
+CMakeFiles/obj.dir/src/product.cpp.o: src/product.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/obj.dir/src/product.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/obj.dir/src/product.cpp.o -c /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/product.cpp
+
+CMakeFiles/obj.dir/src/product.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obj.dir/src/product.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/product.cpp > CMakeFiles/obj.dir/src/product.cpp.i
+
+CMakeFiles/obj.dir/src/product.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obj.dir/src/product.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/product.cpp -o CMakeFiles/obj.dir/src/product.cpp.s
+
+CMakeFiles/obj.dir/src/product.cpp.o.requires:
+
+.PHONY : CMakeFiles/obj.dir/src/product.cpp.o.requires
+
+CMakeFiles/obj.dir/src/product.cpp.o.provides: CMakeFiles/obj.dir/src/product.cpp.o.requires
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/product.cpp.o.provides.build
+.PHONY : CMakeFiles/obj.dir/src/product.cpp.o.provides
+
+CMakeFiles/obj.dir/src/product.cpp.o.provides.build: CMakeFiles/obj.dir/src/product.cpp.o
+
+
+CMakeFiles/obj.dir/src/shoes.cpp.o: CMakeFiles/obj.dir/flags.make
+CMakeFiles/obj.dir/src/shoes.cpp.o: src/shoes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/obj.dir/src/shoes.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/obj.dir/src/shoes.cpp.o -c /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/shoes.cpp
+
+CMakeFiles/obj.dir/src/shoes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obj.dir/src/shoes.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/shoes.cpp > CMakeFiles/obj.dir/src/shoes.cpp.i
+
+CMakeFiles/obj.dir/src/shoes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obj.dir/src/shoes.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/shoes.cpp -o CMakeFiles/obj.dir/src/shoes.cpp.s
+
+CMakeFiles/obj.dir/src/shoes.cpp.o.requires:
+
+.PHONY : CMakeFiles/obj.dir/src/shoes.cpp.o.requires
+
+CMakeFiles/obj.dir/src/shoes.cpp.o.provides: CMakeFiles/obj.dir/src/shoes.cpp.o.requires
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/shoes.cpp.o.provides.build
+.PHONY : CMakeFiles/obj.dir/src/shoes.cpp.o.provides
+
+CMakeFiles/obj.dir/src/shoes.cpp.o.provides.build: CMakeFiles/obj.dir/src/shoes.cpp.o
+
+
+CMakeFiles/obj.dir/src/shop.cpp.o: CMakeFiles/obj.dir/flags.make
+CMakeFiles/obj.dir/src/shop.cpp.o: src/shop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/obj.dir/src/shop.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/obj.dir/src/shop.cpp.o -c /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/shop.cpp
+
+CMakeFiles/obj.dir/src/shop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obj.dir/src/shop.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/shop.cpp > CMakeFiles/obj.dir/src/shop.cpp.i
+
+CMakeFiles/obj.dir/src/shop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obj.dir/src/shop.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/shop.cpp -o CMakeFiles/obj.dir/src/shop.cpp.s
+
+CMakeFiles/obj.dir/src/shop.cpp.o.requires:
+
+.PHONY : CMakeFiles/obj.dir/src/shop.cpp.o.requires
+
+CMakeFiles/obj.dir/src/shop.cpp.o.provides: CMakeFiles/obj.dir/src/shop.cpp.o.requires
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/shop.cpp.o.provides.build
+.PHONY : CMakeFiles/obj.dir/src/shop.cpp.o.provides
+
+CMakeFiles/obj.dir/src/shop.cpp.o.provides.build: CMakeFiles/obj.dir/src/shop.cpp.o
+
+
+CMakeFiles/obj.dir/src/tshirt.cpp.o: CMakeFiles/obj.dir/flags.make
+CMakeFiles/obj.dir/src/tshirt.cpp.o: src/tshirt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/obj.dir/src/tshirt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/obj.dir/src/tshirt.cpp.o -c /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/tshirt.cpp
+
+CMakeFiles/obj.dir/src/tshirt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obj.dir/src/tshirt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/tshirt.cpp > CMakeFiles/obj.dir/src/tshirt.cpp.i
+
+CMakeFiles/obj.dir/src/tshirt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obj.dir/src/tshirt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/tshirt.cpp -o CMakeFiles/obj.dir/src/tshirt.cpp.s
+
+CMakeFiles/obj.dir/src/tshirt.cpp.o.requires:
+
+.PHONY : CMakeFiles/obj.dir/src/tshirt.cpp.o.requires
+
+CMakeFiles/obj.dir/src/tshirt.cpp.o.provides: CMakeFiles/obj.dir/src/tshirt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/tshirt.cpp.o.provides.build
+.PHONY : CMakeFiles/obj.dir/src/tshirt.cpp.o.provides
+
+CMakeFiles/obj.dir/src/tshirt.cpp.o.provides.build: CMakeFiles/obj.dir/src/tshirt.cpp.o
+
+
+CMakeFiles/obj.dir/src/underwear.cpp.o: CMakeFiles/obj.dir/flags.make
+CMakeFiles/obj.dir/src/underwear.cpp.o: src/underwear.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/obj.dir/src/underwear.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/obj.dir/src/underwear.cpp.o -c /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/underwear.cpp
+
+CMakeFiles/obj.dir/src/underwear.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obj.dir/src/underwear.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/underwear.cpp > CMakeFiles/obj.dir/src/underwear.cpp.i
+
+CMakeFiles/obj.dir/src/underwear.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obj.dir/src/underwear.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/underwear.cpp -o CMakeFiles/obj.dir/src/underwear.cpp.s
+
+CMakeFiles/obj.dir/src/underwear.cpp.o.requires:
+
+.PHONY : CMakeFiles/obj.dir/src/underwear.cpp.o.requires
+
+CMakeFiles/obj.dir/src/underwear.cpp.o.provides: CMakeFiles/obj.dir/src/underwear.cpp.o.requires
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/underwear.cpp.o.provides.build
+.PHONY : CMakeFiles/obj.dir/src/underwear.cpp.o.provides
+
+CMakeFiles/obj.dir/src/underwear.cpp.o.provides.build: CMakeFiles/obj.dir/src/underwear.cpp.o
+
+
+obj: CMakeFiles/obj.dir/src/jacket.cpp.o
 obj: CMakeFiles/obj.dir/src/main.cpp.o
 obj: CMakeFiles/obj.dir/src/menu.cpp.o
+obj: CMakeFiles/obj.dir/src/product.cpp.o
+obj: CMakeFiles/obj.dir/src/shoes.cpp.o
+obj: CMakeFiles/obj.dir/src/shop.cpp.o
+obj: CMakeFiles/obj.dir/src/tshirt.cpp.o
+obj: CMakeFiles/obj.dir/src/underwear.cpp.o
 obj: CMakeFiles/obj.dir/build.make
 
 .PHONY : obj
@@ -116,8 +266,14 @@ CMakeFiles/obj.dir/build: obj
 
 .PHONY : CMakeFiles/obj.dir/build
 
+CMakeFiles/obj.dir/requires: CMakeFiles/obj.dir/src/jacket.cpp.o.requires
 CMakeFiles/obj.dir/requires: CMakeFiles/obj.dir/src/main.cpp.o.requires
 CMakeFiles/obj.dir/requires: CMakeFiles/obj.dir/src/menu.cpp.o.requires
+CMakeFiles/obj.dir/requires: CMakeFiles/obj.dir/src/product.cpp.o.requires
+CMakeFiles/obj.dir/requires: CMakeFiles/obj.dir/src/shoes.cpp.o.requires
+CMakeFiles/obj.dir/requires: CMakeFiles/obj.dir/src/shop.cpp.o.requires
+CMakeFiles/obj.dir/requires: CMakeFiles/obj.dir/src/tshirt.cpp.o.requires
+CMakeFiles/obj.dir/requires: CMakeFiles/obj.dir/src/underwear.cpp.o.requires
 
 .PHONY : CMakeFiles/obj.dir/requires
 

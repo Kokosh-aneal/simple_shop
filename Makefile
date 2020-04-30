@@ -136,6 +136,33 @@ program.out/fast:
 	$(MAKE) -f CMakeFiles/program.out.dir/build.make CMakeFiles/program.out.dir/build
 .PHONY : program.out/fast
 
+src/jacket.o: src/jacket.cpp.o
+
+.PHONY : src/jacket.o
+
+# target to build an object file
+src/jacket.cpp.o:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/jacket.cpp.o
+.PHONY : src/jacket.cpp.o
+
+src/jacket.i: src/jacket.cpp.i
+
+.PHONY : src/jacket.i
+
+# target to preprocess a source file
+src/jacket.cpp.i:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/jacket.cpp.i
+.PHONY : src/jacket.cpp.i
+
+src/jacket.s: src/jacket.cpp.s
+
+.PHONY : src/jacket.s
+
+# target to generate assembly for a file
+src/jacket.cpp.s:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/jacket.cpp.s
+.PHONY : src/jacket.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -190,6 +217,141 @@ src/menu.cpp.s:
 	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/menu.cpp.s
 .PHONY : src/menu.cpp.s
 
+src/product.o: src/product.cpp.o
+
+.PHONY : src/product.o
+
+# target to build an object file
+src/product.cpp.o:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/product.cpp.o
+.PHONY : src/product.cpp.o
+
+src/product.i: src/product.cpp.i
+
+.PHONY : src/product.i
+
+# target to preprocess a source file
+src/product.cpp.i:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/product.cpp.i
+.PHONY : src/product.cpp.i
+
+src/product.s: src/product.cpp.s
+
+.PHONY : src/product.s
+
+# target to generate assembly for a file
+src/product.cpp.s:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/product.cpp.s
+.PHONY : src/product.cpp.s
+
+src/shoes.o: src/shoes.cpp.o
+
+.PHONY : src/shoes.o
+
+# target to build an object file
+src/shoes.cpp.o:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/shoes.cpp.o
+.PHONY : src/shoes.cpp.o
+
+src/shoes.i: src/shoes.cpp.i
+
+.PHONY : src/shoes.i
+
+# target to preprocess a source file
+src/shoes.cpp.i:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/shoes.cpp.i
+.PHONY : src/shoes.cpp.i
+
+src/shoes.s: src/shoes.cpp.s
+
+.PHONY : src/shoes.s
+
+# target to generate assembly for a file
+src/shoes.cpp.s:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/shoes.cpp.s
+.PHONY : src/shoes.cpp.s
+
+src/shop.o: src/shop.cpp.o
+
+.PHONY : src/shop.o
+
+# target to build an object file
+src/shop.cpp.o:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/shop.cpp.o
+.PHONY : src/shop.cpp.o
+
+src/shop.i: src/shop.cpp.i
+
+.PHONY : src/shop.i
+
+# target to preprocess a source file
+src/shop.cpp.i:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/shop.cpp.i
+.PHONY : src/shop.cpp.i
+
+src/shop.s: src/shop.cpp.s
+
+.PHONY : src/shop.s
+
+# target to generate assembly for a file
+src/shop.cpp.s:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/shop.cpp.s
+.PHONY : src/shop.cpp.s
+
+src/tshirt.o: src/tshirt.cpp.o
+
+.PHONY : src/tshirt.o
+
+# target to build an object file
+src/tshirt.cpp.o:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/tshirt.cpp.o
+.PHONY : src/tshirt.cpp.o
+
+src/tshirt.i: src/tshirt.cpp.i
+
+.PHONY : src/tshirt.i
+
+# target to preprocess a source file
+src/tshirt.cpp.i:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/tshirt.cpp.i
+.PHONY : src/tshirt.cpp.i
+
+src/tshirt.s: src/tshirt.cpp.s
+
+.PHONY : src/tshirt.s
+
+# target to generate assembly for a file
+src/tshirt.cpp.s:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/tshirt.cpp.s
+.PHONY : src/tshirt.cpp.s
+
+src/underwear.o: src/underwear.cpp.o
+
+.PHONY : src/underwear.o
+
+# target to build an object file
+src/underwear.cpp.o:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/underwear.cpp.o
+.PHONY : src/underwear.cpp.o
+
+src/underwear.i: src/underwear.cpp.i
+
+.PHONY : src/underwear.i
+
+# target to preprocess a source file
+src/underwear.cpp.i:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/underwear.cpp.i
+.PHONY : src/underwear.cpp.i
+
+src/underwear.s: src/underwear.cpp.s
+
+.PHONY : src/underwear.s
+
+# target to generate assembly for a file
+src/underwear.cpp.s:
+	$(MAKE) -f CMakeFiles/obj.dir/build.make CMakeFiles/obj.dir/src/underwear.cpp.s
+.PHONY : src/underwear.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,12 +362,30 @@ help:
 	@echo "... obj"
 	@echo "... rebuild_cache"
 	@echo "... program.out"
+	@echo "... src/jacket.o"
+	@echo "... src/jacket.i"
+	@echo "... src/jacket.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/menu.o"
 	@echo "... src/menu.i"
 	@echo "... src/menu.s"
+	@echo "... src/product.o"
+	@echo "... src/product.i"
+	@echo "... src/product.s"
+	@echo "... src/shoes.o"
+	@echo "... src/shoes.i"
+	@echo "... src/shoes.s"
+	@echo "... src/shop.o"
+	@echo "... src/shop.i"
+	@echo "... src/shop.s"
+	@echo "... src/tshirt.o"
+	@echo "... src/tshirt.i"
+	@echo "... src/tshirt.s"
+	@echo "... src/underwear.o"
+	@echo "... src/underwear.i"
+	@echo "... src/underwear.s"
 .PHONY : help
 
 

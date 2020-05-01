@@ -71,8 +71,9 @@ void Menu::show(){
                 break;
             //Wyswietlanie stanu magazynu
             case 5:
-                for(int i=0; i<sizeof(sklep); i++)
+                for(int i=0; i<sizeof(sklep); i++){
                     this->sklep->display(i);
+                }
                 break;
             case 0:
                 std::cout << std::endl << "Konczenie pracy programu..." << std::endl;

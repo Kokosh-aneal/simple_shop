@@ -3,6 +3,11 @@
 #include "../include/shop.hpp"
 #include "../include/product.hpp"
 #include "../include/jacket.hpp"
+#include "../include/shoes.hpp"
+#include "../include/tshirt.hpp"
+#include "../include/underwear.hpp"
+#include <vector>
+
 
 Menu::Menu(Shop* sklep_con): sklep(sklep_con){
 }
@@ -38,17 +43,22 @@ void Menu::show(){
                         std::cout << "Ilosc kieszeni: ";    std::cin >> pockets_temp;
                         sklep->adding(new Jacket(brand_temp, price_temp, material_temp, pockets_temp));
                         break;
-                    //case 2:
-                    //    break;
-                    //case 3:
-                    //    break;
-                    //case 4:
-                    //    break;
-                    //default:
-                    //    std::cout << "Wybierz produkt z listy.\n";
-                    //    break;
+                    case 2:
+                        std::cout << "Rozmiar buta: ";    std::cin >> size_temp1;
+                        sklep->adding(new Shoes(brand_temp, price_temp, material_temp, size_temp1));
+                        break;
+                    case 3:
+                        std::cout << "Rozmiar koszulki (S,M,...): ";    std::cin >> size_temp2;
+                        sklep->adding(new Tshirt(brand_temp, price_temp, material_temp, size_temp2));
+                        break;
+                    case 4:
+                        std::cout << "Rodzaj bielizny: ";    std::cin >> shape_temp;
+                        sklep->adding(new Underwear(brand_temp, price_temp, material_temp, shape_temp));
+                        break;
+                    default:
+                        std::cout << "Wybierz produkt z listy.\n";
+                        break;
                 }
-                //sklep.add();
                 break;
             //Usuwanie z magazynu
             case 2:
@@ -61,7 +71,8 @@ void Menu::show(){
                 break;
             //Wyswietlanie stanu magazynu
             case 5:
-                this->sklep->display(0);
+                for(int i=0; i<sizeof(sklep); i++)
+                    this->sklep->display(i);
                 break;
             case 0:
                 std::cout << std::endl << "Konczenie pracy programu..." << std::endl;

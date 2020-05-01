@@ -13,7 +13,10 @@ CMakeFiles/obj.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/obj.dir/src/menu.cpp.o: include/jacket.hpp
 CMakeFiles/obj.dir/src/menu.cpp.o: include/menu.hpp
 CMakeFiles/obj.dir/src/menu.cpp.o: include/product.hpp
+CMakeFiles/obj.dir/src/menu.cpp.o: include/shoes.hpp
 CMakeFiles/obj.dir/src/menu.cpp.o: include/shop.hpp
+CMakeFiles/obj.dir/src/menu.cpp.o: include/tshirt.hpp
+CMakeFiles/obj.dir/src/menu.cpp.o: include/underwear.hpp
 CMakeFiles/obj.dir/src/menu.cpp.o: src/menu.cpp
 
 CMakeFiles/obj.dir/src/product.cpp.o: include/product.hpp

@@ -71,8 +71,13 @@ void Menu::show(){
                 break;
             //Wyswietlanie stanu magazynu
             case 5:
-                for(int i=0; i<sizeof(sklep); i++){
-                    this->sklep->display(i);
+                if(sizeof(sklep)>0){
+                //for(int i=0; i<sizeof(sklep); i++){
+                    this->sklep->display(0);
+                //}
+                }
+                else{
+                    std::cout << "Wprowadz jakis rekord." << std::endl;
                 }
                 break;
             case 0:

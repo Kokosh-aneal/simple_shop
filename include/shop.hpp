@@ -15,7 +15,7 @@ class Shop{
         void adding(Product*);
         void removing();
         void ordering();
-        void display_store();
+        void display(const int) const;
 };
 
 #endif //__SHOP__H__

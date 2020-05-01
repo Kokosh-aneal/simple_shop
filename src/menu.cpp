@@ -36,8 +36,7 @@ void Menu::show(){
                 switch(opcja_add){
                     case 1:
                         std::cout << "Ilosc kieszeni: ";    std::cin >> pockets_temp;
-                        Jacket kurtka(brand_temp, price_temp, material_temp, pockets_temp);
-                        sklep->adding(&kurtka);
+                        sklep->adding(new Jacket(brand_temp, price_temp, material_temp, pockets_temp));
                         break;
                     //case 2:
                     //    break;
@@ -62,7 +61,7 @@ void Menu::show(){
                 break;
             //Wyswietlanie stanu magazynu
             case 5:
-                this->sklep->display_store();
+                this->sklep->display(0);
                 break;
             case 0:
                 std::cout << std::endl << "Konczenie pracy programu..." << std::endl;

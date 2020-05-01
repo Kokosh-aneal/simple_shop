@@ -21,9 +21,6 @@ void Shop::adding(Product* produkt){
 //void Shop::order(){
 //}
 
-void Shop::display_store(){
-    for(int i=0; i<store.size(); i++){
-        std::cout << i+1 << " ";
+void Shop::display(const int i) const{
         store[i]->display();
-    }
 }

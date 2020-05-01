@@ -62,7 +62,7 @@ void Menu::show(){
                 break;
             //Wyswietlanie stanu magazynu
             case 5:
-                sklep->display_store();
+                this->sklep->display_store();
                 break;
             case 0:
                 std::cout << std::endl << "Konczenie pracy programu..." << std::endl;

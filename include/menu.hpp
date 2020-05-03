@@ -8,7 +8,7 @@ class Menu{
     private:
         int opcja;
         int opcja_add;
-        Shop* sklep;
+        Shop *sklep;
         std::string brand_temp;
         float price_temp;
         std::string material_temp;

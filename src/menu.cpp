@@ -71,10 +71,11 @@ void Menu::show(){
                 break;
             //Wyswietlanie stanu magazynu
             case 5:
-                if(sizeof(sklep)>0){
-                //for(int i=0; i<sizeof(sklep); i++){
-                    this->sklep->display(0);
-                //}
+                if(sklep->store.size()>0){
+                    for(int i=0; i<sklep->store.size(); i++){
+                        std::cout << i << ".";
+                        this->sklep->display(i);
+                }
                 }
                 else{
                     std::cout << "Wprowadz jakis rekord." << std::endl;

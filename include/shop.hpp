@@ -2,6 +2,7 @@
 #define __SHOP__H__
 
 #include "../include/product.hpp"
+//#include "../include/menu.hpp"
 #include <string>
 #include <vector>
 
@@ -16,6 +17,7 @@ class Shop{
         void removing();
         void ordering();
         void display(const int) const;
+        friend class Menu;
 };
 
 #endif //__SHOP__H__

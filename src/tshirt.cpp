@@ -9,5 +9,5 @@ Product(brand_con, price_con, material_con), size(size_con)
 }
 
 void Tshirt::display() const{
-    std::cout << " " << brand << " " << price << " " << material << " " << size << "\n";
+    std::cout << "Koszulka: " << brand << " " << price << " " << material << " " << size << "\n";
 }

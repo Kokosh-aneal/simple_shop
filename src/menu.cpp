@@ -24,18 +24,19 @@ void Menu::show(){
         std::cout << "5. Wyswietl stan magazynu" << std::endl;
         std::cout << "Wybierz opcje:";
         std::cin >> opcja;
+        system("clear");
         //Instrukcja switch-case obslugujaca menu
         switch(opcja){
             //Dodawanie do magazynu
             case 1:
                 //Wybor produktu, ktory uzytkownik chce dodac do magazynu
-                std::cout << "1. Kurtka\n";
+                std::cout << "\n1. Kurtka\n";
                 std::cout << "2. Buty\n";
                 std::cout << "3. Koszulka\n";
                 std::cout << "4. Bielizna\n";
                 std::cout << "\nWybierz produkt, ktory chcesz dodac: ";
                 std::cin >> opcja_add;
-                std::cout << "Marka: ";    std::cin >> brand_temp;
+                std::cout << "\nMarka: ";    std::cin >> brand_temp;
                 std::cout << "Cena: ";     std::cin >> price_temp;
                 std::cout << "Material: "; std::cin >> material_temp;  
                 switch(opcja_add){
@@ -59,9 +60,13 @@ void Menu::show(){
                         std::cout << "Wybierz produkt z listy.\n";
                         break;
                 }
+                system("clear");
                 break;
             //Usuwanie z magazynu
             case 2:
+                std::cout << "\nPodaj indeks elementu, ktory chcesz usunac: ";
+                std::cin >> id;
+                sklep->store.erase(sklep->store.begin()+id);
                 break;
             //Zmiana ceny produktu
             case 3:
@@ -82,7 +87,7 @@ void Menu::show(){
                 }
                 break;
             case 0:
-                std::cout << std::endl << "Konczenie pracy programu..." << std::endl;
+                std::cout << std::endl << "Konczenie pracy programu...\n" << std::endl;
                 exit(1);
             default:
                 std::cout << std::endl << "Nie ma takiej opcji, sprobuj jeszcze raz." << std::endl;

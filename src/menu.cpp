@@ -13,6 +13,7 @@ Menu::Menu(Shop* sklep_con): sklep(sklep_con){
 }
 
 void Menu::show(){
+    system("clear");
     while(opcja!=0){
         //Proste UI
         std::cout << std:: endl << "Witaj w programie zarzadzajacym sklepem!" << std::endl;
@@ -70,6 +71,20 @@ void Menu::show(){
                 break;
             //Zmiana ceny produktu
             case 3:
+                if(sklep->store.size()>0){
+                    for(int i=0; i<sklep->store.size(); i++){
+                        std::cout << i << ".";
+                        this->sklep->display(i);
+                    }
+                    std::cout << "\nPodaj ID produktu, ktorego cene chcesz zmienic: ";
+                    std::cin >> id;
+                    std::cout << "\nPodaj cene: ";
+                    std::cin >> price_temp;
+                    sklep->store[id]->price = price_temp;  
+                }
+                else{
+                    std::cout << "Wprowadz jakis rekord." << std::endl;
+                }
                 break;
             //Skladanie zamowienia na nowe produkty
             case 4:

@@ -17,7 +17,8 @@ class Menu{
         int size_temp1;
         char size_temp2;
         std::string shape_temp;
-        std::string file_name;
+        int id_temp;
+        std::string linia;
     public:
         Menu(Shop*);
         //~Menu();

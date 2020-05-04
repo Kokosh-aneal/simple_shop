@@ -11,7 +11,6 @@ class Jacket :public Product{
         Jacket(const std::string="*brand*", float=4, const std::string="*material*", const int = 2);
         void display() const override;
         void save_record() const override;
-        void read_record() const override;
 };
 
 #endif //__JACKET__H__

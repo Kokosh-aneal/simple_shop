@@ -8,7 +8,7 @@
 #include "../include/underwear.hpp"
 #include <vector>
 #include <fstream>
-
+#include <cstdio>
 
 Menu::Menu(Shop* sklep_con): sklep(sklep_con){
 }
@@ -72,8 +72,7 @@ void Menu::show(){
 void Menu::save_to_file(){
     if(sklep->store.size()>0){
         std::ofstream zapis;
-        file_name = "magazyn.txt";
-        zapis.open(file_name);
+        zapis.open("magazyn.txt");
         for(int i=0; i<sklep->store.size(); i++){
             this->sklep->store[i]->save_record();
         }
@@ -84,7 +83,29 @@ void Menu::save_to_file(){
 }
 
 void Menu::read_from_file(){
-    std::cout<< "wczytywanie pliku...\n";
+    std::fstream odczyt;
+    int oper;
+    odczyt.open("magazyn.txt", std::fstream::in);
+    if(odczyt.good()){
+        while(!odczyt.eof()){
+            getline(odczyt, linia);
+            this->id_temp = linia[0];
+            switch(id_temp){
+                case 49:
+                    sklep->adding(new Jacket(brand_temp,price_temp,material_temp,pockets_temp));
+                    break;
+                case 50:
+                    break;
+                case 51:
+                    break;
+                case 52:
+                    break;
+            }
+        }
+    }
+    else{
+        std::cout << "Blad podczas otwierania pliku.\n";
+    }
 }
 
 void Menu::display_store(){

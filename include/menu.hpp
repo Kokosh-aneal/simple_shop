@@ -19,6 +19,9 @@ class Menu{
         std::string shape_temp;
         int id_temp;
         std::string linia;
+        std::string id_str;
+        std::string price_str;
+        std::string pockets_str;
     public:
         Menu(Shop*);
         //~Menu();

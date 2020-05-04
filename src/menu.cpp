@@ -8,7 +8,8 @@
 #include "../include/underwear.hpp"
 #include <vector>
 #include <fstream>
-#include <cstdio>
+#include <cstdlib>
+#include <string>
 
 Menu::Menu(Shop* sklep_con): sklep(sklep_con){
 }
@@ -87,18 +88,44 @@ void Menu::read_from_file(){
     int oper;
     odczyt.open("magazyn.txt", std::fstream::in);
     if(odczyt.good()){
-        while(!odczyt.eof()){
-            getline(odczyt, linia);
-            this->id_temp = linia[0];
-            switch(id_temp){
+        //while(!odczyt.eof()){
+        //    getline(odczyt, linia, ';');
+        //    this->id_temp = linia[0];
+        //    switch(id_temp){
+        //        case 49:
+        //            getline(odczyt, linia, ';');
+        //            this->brand_temp = linia;
+        //            getline(odczyt, linia, ';');
+        //            this->price_temp = stof(linia);
+        //            getline(odczyt, linia, ';');
+        //            this->material_temp = linia;
+        //            getline(odczyt, linia, ';');
+        //            this->pockets_temp = stof(linia);
+        //            sklep->adding(new Jacket(brand_temp,price_temp,material_temp,pockets_temp));
+        //            break;
+        //        case 50:
+        //            break;
+        //        case 51:
+        //            break;
+        //        case 52:
+        //            break;
+        //    }
+        //}
+        while(odczyt.good()){
+            getline(odczyt, this->id_str, ';');
+            std::cout << "id_str: " << id_str;
+            getline(odczyt, this->brand_temp, ';');
+            getline(odczyt, this->price_str, ';');
+            getline(odczyt, this->material_temp, ';');
+            this->id_temp = stoi(id_str);
+            std::cout << " id_temp:" << id_temp << "  ";
+            this->price_temp = stof(price_str);
+            switch(this->id_temp){
                 case 49:
-                    //sklep->adding(new Jacket(brand_temp,price_temp,material_temp,pockets_temp));
-                    break;
-                case 50:
-                    break;
-                case 51:
-                    break;
-                case 52:
+                    getline(odczyt, this->pockets_str,'\n');
+                    this->pockets_temp = stof(this->pockets_str);
+                    std::cout << pockets_temp;
+                    sklep->adding(new Jacket(brand_temp,price_temp,material_temp,pockets_temp));
                     break;
             }
         }

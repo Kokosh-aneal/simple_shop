@@ -85,7 +85,9 @@ vector
 -
 fstream
 -
-cstdio
+cstdlib
+-
+string
 -
 
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/product.cpp

@@ -92,7 +92,7 @@ void Menu::read_from_file(){
             this->id_temp = linia[0];
             switch(id_temp){
                 case 49:
-                    sklep->adding(new Jacket(brand_temp,price_temp,material_temp,pockets_temp));
+                    //sklep->adding(new Jacket(brand_temp,price_temp,material_temp,pockets_temp));
                     break;
                 case 50:
                     break;

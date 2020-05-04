@@ -6,5 +6,5 @@ Underwear::Underwear(const std::string brand_con, float price_con, const std::st
 Product(brand_con, price_con, material_con), shape(shape_con){}
 
 void Underwear::display() const{
-    std::cout << "Bielizna: " << brand << " " << price << " " << material << " " << shape << "\n";
+    std::cout << "4;" << brand << ";" << price << ";" << material << ";" << shape << "\n";
 }

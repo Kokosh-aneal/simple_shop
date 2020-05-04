@@ -9,5 +9,5 @@ Product(brand_con, price_con, material_con), num_of_pockets(num_of_pockets_con)
 }
 
 void Jacket::display() const{
-    std::cout << "Kurtka:"<< " " << this->brand << " " << this->price << " " << this->material << " " << this->num_of_pockets << "\n";
+    std::cout << "1;" << this->brand << ";" << this->price << ";" << this->material << ";" << this->num_of_pockets << "\n";
 }

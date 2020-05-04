@@ -17,10 +17,17 @@ class Menu{
         int size_temp1;
         char size_temp2;
         std::string shape_temp;
+        std::string file_name;
     public:
         Menu(Shop*);
         //~Menu();
         void show();
+        void adding_to_store();
+        void remove_from_store();
+        void change_price();
+        void display_store();
+        void save_to_file();
+        void read_from_file();
 };
 
 #endif  //__MENU__H__

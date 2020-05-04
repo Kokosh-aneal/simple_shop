@@ -74,21 +74,28 @@ void Menu::save_to_file(){
         std::ofstream zapis;
         file_name = "magazyn.txt";
         zapis.open(file_name);
-        //for(int i=0; i<sklep->store.size(); i++){
-        //    zapis << this->sklep->display(i);
-        //}
-        zapis << "test";
-        
+        for(int i=0; i<sklep->store.size(); i++){
+            this->sklep->store[i]->save_record();
+        }
     }
     else{
         std::cout << "Wprowadz rekordy do bazy danych!\n";
     }
 }
 
+void Menu::read_from_file(){
+    std::cout<< "wczytywanie pliku...\n";
+}
+
 void Menu::display_store(){
     if(sklep->store.size()>0){
+        std::cout << "typ:  ";
+        std::cout << "kurtka = 1, buty = 2, koszulka = 3, bielizna = 4";
+        std::cout << "\nCecha:  ";
+        std::cout << "kurtka = ilosc kieszeni, buty = rozmiar, koszulka = rozmiar, bielizna = rodzaj\n";
+        std::cout << "\nLp. ; typ ; marka ; cena ; material ; cecha\n";
         for(int i=0; i<sklep->store.size(); i++){
-            std::cout << i << ".";
+            std::cout << i << ". ";
             this->sklep->display(i);
         }
     }

@@ -9,6 +9,8 @@
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/include/jacket.hpp
 ../include/product.hpp
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/include/product.hpp
+fstream
+-
 
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/include/menu.hpp
 iostream
@@ -18,6 +20,8 @@ iostream
 
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/include/product.hpp
 string
+-
+fstream
 -
 
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/include/shoes.hpp
@@ -49,6 +53,8 @@ string
 -
 ../include/jacket.hpp
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/include/jacket.hpp
+fstream
+-
 
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/main.cpp
 ../include/menu.hpp
@@ -76,6 +82,8 @@ iostream
 ../include/underwear.hpp
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/include/underwear.hpp
 vector
+-
+fstream
 -
 
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/product.cpp

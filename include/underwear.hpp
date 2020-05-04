@@ -10,6 +10,7 @@ class Underwear :public Product{
     public:
         Underwear(const std::string="*brand*", float=4, const std::string="*material*", std::string="*shape*");
         void display() const override;
+        void save_record() const override;
 };
 
 #endif //__UNDERWEAR__H__

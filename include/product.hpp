@@ -15,6 +15,7 @@ class Product{
         ~Product();
         virtual void display() const = 0;
         virtual void save_record() const = 0;
+        virtual void read_record() const = 0;
 };
 
 #endif 

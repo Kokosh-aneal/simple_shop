@@ -1,2 +1,5 @@
 1;gucci;139;skora;4
 1;nike;99;ortalion;2
+2;nike;199;skora;41
+3;adidas;29;bawelna;M
+4;adidas;15;bawelna;biustonosz

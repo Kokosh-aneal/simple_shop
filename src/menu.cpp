@@ -10,6 +10,7 @@
 #include <fstream>
 #include <cstdlib>
 #include <string>
+#include <sstream>
 
 Menu::Menu(Shop* sklep_con): sklep(sklep_con){
 }
@@ -111,21 +112,55 @@ void Menu::read_from_file(){
         //            break;
         //    }
         //}
-        while(odczyt.good()){
-            getline(odczyt, this->id_str, ';');
-            std::cout << "id_str: " << id_str;
-            getline(odczyt, this->brand_temp, ';');
-            getline(odczyt, this->price_str, ';');
-            getline(odczyt, this->material_temp, ';');
+        //while(odczyt.good()){
+        //    getline(odczyt, this->id_str, ';');
+        //    std::cout << "id_str: " << id_str;
+        //    getline(odczyt, this->brand_temp, ';');
+        //    getline(odczyt, this->price_str, ';');
+        //    getline(odczyt, this->material_temp, ';');
+        //    this->id_temp = stoi(id_str);
+        //    std::cout << " id_temp:" << id_temp << "  ";
+        //    this->price_temp = stof(price_str);
+        //    switch(this->id_temp){
+        //        case 49:
+        //            getline(odczyt, this->pockets_str,'\n');
+        //            this->pockets_temp = stof(this->pockets_str);
+        //            std::cout << pockets_temp;
+        //            sklep->adding(new Jacket(brand_temp,price_temp,material_temp,pockets_temp));
+        //            break;
+        //    }
+        //}
+        while(getline(odczyt, linia)){
+            std::stringstream ss(linia);
+            getline(ss, this->id_str,';');
             this->id_temp = stoi(id_str);
-            std::cout << " id_temp:" << id_temp << "  ";
-            this->price_temp = stof(price_str);
+            getline(ss, this->brand_temp,';');
+            getline(ss, this->price_str, ';');
+            this->price_temp = stoi(price_str);
+            getline(ss, this->material_temp, ';');
             switch(this->id_temp){
-                case 49:
-                    getline(odczyt, this->pockets_str,'\n');
-                    this->pockets_temp = stof(this->pockets_str);
-                    std::cout << pockets_temp;
+                //Kurtka
+                case 1:
+                    getline(ss, this->pockets_str,';');
+                    this->pockets_temp = stoi(pockets_str);
                     sklep->adding(new Jacket(brand_temp,price_temp,material_temp,pockets_temp));
+                    break;
+                //Buty
+                case 2:
+                    getline(ss, this->size_str,';');
+                    this->size_temp1 = stoi(size_str);
+                    sklep->adding(new Shoes(brand_temp, price_temp, material_temp, size_temp1));
+                    break;
+                //Koszulka
+                case 3:
+                    getline(ss, this->size_str,';');
+                    this->size_temp2 = size_str[0];
+                    sklep->adding(new Tshirt(brand_temp, price_temp, material_temp, size_temp2));
+                    break;
+                //Bielizna
+                case 4:
+                    getline(ss, this->shape_temp,';');
+                    sklep->adding(new Underwear(brand_temp, price_temp, material_temp, shape_temp));
                     break;
             }
         }

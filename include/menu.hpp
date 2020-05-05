@@ -22,6 +22,7 @@ class Menu{
         std::string id_str;
         std::string price_str;
         std::string pockets_str;
+        std::string size_str;
     public:
         Menu(Shop*);
         //~Menu();

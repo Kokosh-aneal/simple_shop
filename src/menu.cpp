@@ -126,6 +126,7 @@ void Menu::read_from_file(){
     else{
         std::cout << "Blad podczas otwierania pliku.\n";
     }
+    odczyt.close();
 }
 
 void Menu::display_store(){

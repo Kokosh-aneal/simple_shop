@@ -1,3 +1,4 @@
+//Autor: Jakub Kokoszka
 #ifndef __SHOES__H__
 #define __SHOES__H__
 

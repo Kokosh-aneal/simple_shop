@@ -1,3 +1,4 @@
+//Autor: Jakub Kokoszka
 #ifndef __SHOP__H__
 #define __SHOP__H__
 

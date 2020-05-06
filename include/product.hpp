@@ -1,3 +1,4 @@
+//Autor: Jakub Kokoszka
 #ifndef __PRODUCT__H__
 #define __PRODUCT__H__
 

@@ -1,3 +1,4 @@
+//Autor: Jakub Kokoszka
 #ifndef __MENU__H__
 #define __MENU__H__
 
@@ -8,7 +9,10 @@ class Menu{
     private:
         int opcja;
         int opcja_add;
+        int opcja_order;
         int id;
+        char choice;
+        char choice_end;
         Shop *sklep;
         std::string brand_temp;
         float price_temp;
@@ -29,6 +33,7 @@ class Menu{
         void show();
         void adding_to_store();
         void remove_from_store();
+        void order();
         void change_price();
         void display_store();
         void save_to_file();

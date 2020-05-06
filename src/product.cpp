@@ -1,3 +1,4 @@
+//Autor: Jakub Kokoszka
 #include <iostream>
 #include <string>
 #include "../include/product.hpp"

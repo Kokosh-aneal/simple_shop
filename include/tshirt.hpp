@@ -1,3 +1,4 @@
+//Autor: Jakub Kokoszka
 #ifndef __TSHIRT__H__
 #define __TSHIRT__H__
 

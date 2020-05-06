@@ -3,3 +3,6 @@
 2;nike;199;skora;41
 3;adidas;29;bawelna;M
 4;adidas;15;bawelna;biustonosz
+1;kappa;99;ortalion;2
+1;xiaomi;199;ortalion;3
+3;puma;45;bawelna;M

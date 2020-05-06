@@ -1,4 +1,5 @@
 #include "../include/menu.hpp"
+//Autor: Jakub Kokoszka
 #include "../include/shop.hpp"
 #include <iostream>
 

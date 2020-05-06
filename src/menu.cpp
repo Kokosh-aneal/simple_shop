@@ -1,22 +1,31 @@
+//Autor: Jakub Kokoszka
 #include "../include/menu.hpp"
-#include <iostream>
 #include "../include/shop.hpp"
 #include "../include/product.hpp"
 #include "../include/jacket.hpp"
 #include "../include/shoes.hpp"
 #include "../include/tshirt.hpp"
 #include "../include/underwear.hpp"
+#include <iostream>
 #include <vector>
 #include <fstream>
 #include <cstdlib>
 #include <string>
 #include <sstream>
 
+//Konstruktor klasy Menu
 Menu::Menu(Shop* sklep_con): sklep(sklep_con){
 }
 
+//Glowna funkcja wyswietlajaca UI oraz obslugujaca program
 void Menu::show(){
     system("clear");
+    std::cout << "Czy wczytac magazyn z pliku 'magazyn.txt'(t/n):";
+    std::cin >> choice;
+    system("clear");
+    if(choice==116){
+        read_from_file();
+    }
     while(opcja!=0){
         //Proste UI
         std::cout << std:: endl << "Witaj w programie zarzadzajacym sklepem!" << std::endl;
@@ -50,20 +59,30 @@ void Menu::show(){
                 break;
             //Skladanie zamowienia na nowe produkty
             case 4:
+                order();
+                system("clear");
                 break;
             //Wyswietlanie stanu magazynu
             case 5:
                 display_store();
                 break;
+            //Zapis do pliku
             case 6:
                 save_to_file();
                 break;
+            //Odczyt z pliku
             case 7:
                 read_from_file();
                 break;
+            //Konczenie pracy programu
             case 0:
+                std::cout << "Czy zapisac sklep przed wyjsciem z programu (t/n):";
+                std::cin >> choice_end;
+                if(choice_end==116) save_to_file();
+                system("clear");
                 std::cout << std::endl << "Konczenie pracy programu...\n" << std::endl;
                 exit(1);
+            //Bledna opcja wybrana przez uzytkownika
             default:
                 std::cout << std::endl << "Nie ma takiej opcji, sprobuj jeszcze raz." << std::endl;
                 break;
@@ -71,12 +90,28 @@ void Menu::show(){
     }
 }
 
+//Funkcja zapisujaca do pliku
 void Menu::save_to_file(){
     if(sklep->store.size()>0){
-        std::ofstream zapis;
-        zapis.open("magazyn.txt");
-        for(int i=0; i<sklep->store.size(); i++){
-            this->sklep->store[i]->save_record();
+        std::cout << "1. na koniec pliku\n";
+        std::cout << "2. wyczyscic plik i zapisac\n";
+        std::cout <<"Wybierz opcje: ";
+        std::cin >> opcja;
+        switch(opcja){
+            case 1:
+                for(int i=0; i<sklep->store.size(); i++){
+                    this->sklep->store[i]->save_record();
+                }
+                break;
+            case 2:
+                std::fstream zapis;
+                zapis.open("magazyn.txt", std::fstream::out);
+                zapis.close();
+                for(int i=0; i<sklep->store.size(); i++){
+                    this->sklep->store[i]->save_record();
+                }
+                break;
+
         }
     }
     else{
@@ -84,6 +119,7 @@ void Menu::save_to_file(){
     }
 }
 
+//Funkcja wczytajaca "baze danych" z pliku
 void Menu::read_from_file(){
     std::fstream odczyt;
     odczyt.open("magazyn.txt", std::fstream::in);
@@ -129,12 +165,11 @@ void Menu::read_from_file(){
     odczyt.close();
 }
 
+//Funkcja wyswietlajaca zawartosc magazynu
 void Menu::display_store(){
     if(sklep->store.size()>0){
-        std::cout << "typ:  ";
-        std::cout << "kurtka = 1, buty = 2, koszulka = 3, bielizna = 4";
-        std::cout << "\nCecha:  ";
-        std::cout << "kurtka = ilosc kieszeni, buty = rozmiar, koszulka = rozmiar, bielizna = rodzaj\n";
+        std::cout << "typ:  kurtka = 1, buty = 2, koszulka = 3, bielizna = 4";
+        std::cout << "\nCecha: kurtka = ilosc kieszeni, buty = rozmiar, koszulka = rozmiar, bielizna = rodzaj\n";
         std::cout << "\nLp. ; typ ; marka ; cena ; material ; cecha\n";
         for(int i=0; i<sklep->store.size(); i++){
             std::cout << i << ". ";
@@ -146,6 +181,7 @@ void Menu::display_store(){
     }
 }
 
+//Funkcja zmieniajaca cene wybranego produktu
 void Menu::change_price(){
     if(sklep->store.size()>0){
         for(int i=0; i<sklep->store.size(); i++){
@@ -154,7 +190,7 @@ void Menu::change_price(){
         }
         std::cout << "\nPodaj ID produktu, ktorego cene chcesz zmienic: ";
         std::cin >> id;
-        std::cout << "\nPodaj cene: ";
+        std::cout << "\nPodaj nowa cene: ";
         std::cin >> price_temp;
         sklep->store[id]->price = price_temp;  
     }
@@ -162,13 +198,30 @@ void Menu::change_price(){
 
 }
 
-void Menu::remove_from_store(){
-    display_store();
-    std::cout << "\nPodaj indeks elementu, ktory chcesz usunac: ";
-    std::cin >> id;
-    sklep->store.erase(sklep->store.begin()+id);
+//Funkcja obslugujaca skladanie zamowien
+void Menu::order(){
+    while(opcja_order!=2){
+        system("clear");
+        std::cout << "1. Dodac produkt do zamowienia\n";
+        std::cout << "2. Zakonczyc skladanie zamowienia\n";
+        std::cout << "Wybierz opcje: ";
+        std::cin >> opcja_order;
+        if(opcja_order==1)  adding_to_store();
+    }
 }
 
+//Funkcja usuwajaca z magazynu
+void Menu::remove_from_store(){
+    display_store();
+    if(sklep->store.size()>0){
+        std::cout << "\nPodaj indeks elementu, ktory chcesz usunac: ";
+        std::cin >> id;
+        sklep->store.erase(sklep->store.begin()+id);
+    }
+    else    std::cout << "Wprowadz jakis rekord!\n";
+}
+
+//Funkcja dodajaca przedmiot do magazynu
 void Menu::adding_to_store(){
     //Wybor produktu, ktory uzytkownik chce dodac do magazynu
     std::cout << "\n1. Kurtka\n";
@@ -182,19 +235,19 @@ void Menu::adding_to_store(){
     std::cout << "Material: "; std::cin >> material_temp;  
     switch(opcja_add){
         case 1:
-            std::cout << "Ilosc kieszeni: ";    std::cin >> pockets_temp;
+            std::cout << "Ilosc kieszeni[int]: ";    std::cin >> pockets_temp;
             sklep->adding(new Jacket(brand_temp, price_temp, material_temp, pockets_temp));
             break;
         case 2:
-            std::cout << "Rozmiar buta: ";    std::cin >> size_temp1;
+            std::cout << "Rozmiar buta[int]: ";    std::cin >> size_temp1;
             sklep->adding(new Shoes(brand_temp, price_temp, material_temp, size_temp1));
             break;
         case 3:
-            std::cout << "Rozmiar koszulki (S,M,...): ";    std::cin >> size_temp2;
+            std::cout << "Rozmiar koszulki (S/M/L)[char]: ";    std::cin >> size_temp2;
             sklep->adding(new Tshirt(brand_temp, price_temp, material_temp, size_temp2));
             break;
         case 4:
-            std::cout << "Rodzaj bielizny: ";    std::cin >> shape_temp;
+            std::cout << "Rodzaj bielizny[string]: ";    std::cin >> shape_temp;
             sklep->adding(new Underwear(brand_temp, price_temp, material_temp, shape_temp));
             break;
         default:

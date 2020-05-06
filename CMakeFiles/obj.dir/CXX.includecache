@@ -67,8 +67,6 @@ iostream
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/src/menu.cpp
 ../include/menu.hpp
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/include/menu.hpp
-iostream
--
 ../include/shop.hpp
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/include/shop.hpp
 ../include/product.hpp
@@ -81,6 +79,8 @@ iostream
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/include/tshirt.hpp
 ../include/underwear.hpp
 /home/mion/s/243/jkokoszk/c++/proe_zadanie_programistyczne_nr_1/include/underwear.hpp
+iostream
+-
 vector
 -
 fstream
